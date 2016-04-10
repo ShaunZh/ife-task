@@ -1,0 +1,63 @@
+* {
+	margin: 0px;
+	padding:0px;
+}
+
+body{
+	font-family: sans-serif;
+}
+
+a, p, ul, li, dl, dt, dd{
+	font-size: 13px;
+}
+
+li{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+.auto{
+	margin: 0 auto;
+	width: 980px;
+}
+
+#header{
+	width: 100%;
+	height: 80px;
+	background-color: #8d4bbb;
+}
+
+#header p{
+ 	font-size: 23px;
+ 	color: white;
+ 	float: left;
+ 	width:100px;
+ 	padding:45px 0 0 0;
+}
+
+#header ul{
+	margin-right: 0px;
+	float: right;
+	padding-top: 45px;
+}
+
+#header ul li{
+	float: left;
+	margin: 0 0 0 28px;
+}
+
+#header ul li a{
+	font: 14px "ËÎÌו";
+	color: white;
+}
+
+#header .icon{
+	background: url(../img/icon-github.png) no-repeat;
+	width: 30px;
+	height: 34px;
+	background-position: right bottom;
+	float: right;
+}
+
+
