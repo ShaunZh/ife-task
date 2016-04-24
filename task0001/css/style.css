@@ -432,15 +432,24 @@ a{
 }
 
 #gallery-main .gallery-main-left .nav {
-    background: white;
     padding-bottom: 1px;
+    margin-top: 20px;
+    *zoom:1;
 }
 
+#gallery-main .gallery-main-left .nav:after{
+   display: block;
+   content: "";
+   height: 0px;
+   clear: both;
+   overflow: hidden;
+}
 #gallery-main .gallery-main-left .nav ul li{
     padding: 15px 20px 20px 20px;
     float: left;
     background: white;
-    margin: 20px 1px 0 0;
+    margin: 0 1px 0 0;
+
 }
 
 #gallery-main .gallery-main-left .nav .all{
@@ -453,7 +462,6 @@ a{
 }
 
 #gallery-main .gallery-main-left .nav .javascript{
-
     border-top:3px solid #FCD0FB;
 }
 #gallery-main .gallery-main-left .nav .javascript:hover{
@@ -485,10 +493,72 @@ a{
 
 #gallery-main .gallery-main-left .content {
     background: white;
-    margin: 1px 5px 10px 0;
+    margin:  0 5px 10px 0;
     padding: 20px;
     width: 710px;
+    height: 710px;
+    clear:both;
 }
+
+#gallery-main .gallery-main-left .content ul{
+    margin:0 10px 0 0;
+     float: left;
+}
+#gallery-main .gallery-main-left .content .symbol{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+}
+
+
+#gallery-main .gallery-main-left .content .description{
+    color: white;
+    padding: 10px 0 10px 10px;
+    position: relative;
+}
+
+#gallery-main .gallery-main-left .content .description h2 ,p{
+    margin-left: 40px;
+}
+
+#gallery-main .gallery-main-left .content .color-J{
+    background: #4E2551;
+}
+#gallery-main .gallery-main-left .content .color-A{
+    background: #E5C426;
+}
+#gallery-main .gallery-main-left .content .color-F{
+    background: #AD1414;
+}
+#gallery-main .gallery-main-left .content .color-U{
+    background: #8F28D7;
+}
+
+
+
+#gallery-main .gallery-main-left .content .description{
+    margin: -3px 0 10px 0;
+}
+
+#gallery-main .gallery-main-left .content .gallery-left {
+    width: 330px;
+}
+#gallery-main .gallery-main-left .content .gallery-left .bottom ul{
+    float: left;
+    width: 160px;
+
+}
+
+#gallery-main .gallery-mid li{
+    width: 160px;
+    margin: -3px 0 10px 0;
+}
+
 #footer {
     background:black;
     width:100%;
