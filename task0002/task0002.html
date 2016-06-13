@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>task0002</title>
-
+    <script type="text/javascript" src="util.js"></script>
 </head>
 <body>
     <input id="number1" type="text">
     <input id="number2" type="text">
     <span id="result">111</span>
-    <button id="addbtn" style="width: 20px; height: 20px;"></button>
+    <button id="addbtn" class="button1 button2 button3" style="width: 20px; height: 20px;"></button>
     <script>
         function $(id)  {
             return document.getElementById(id);
@@ -30,10 +30,12 @@
             renderResult(result);
         }
 
-        function initEvent() {
-            document.getElementById("btn").addEventListenner("click",  addEventHandler  , false);
-        }
-         initEvent();
+        // function initEvent() {
+        //     document.getElementById("addbtn").addEventListenner("click",  addEventHandler  , false);
+        // }
+         // initEvent();
+
+
     </script>
 </body>
 </html>
