@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-cmn">
+<head>
+    <meta charset="utf-8">
+    <title>Task0003: GTO Tools</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script type="text/javascript" defer="defer" src="scripts/util.js"></script>
+    <script type="text/javascript" defer="defer" src="scripts/gtd.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1>GTD Tools</h1>
+    </header>
+<div class="container">
+        <div id="mainnav" class="sidebar">
+            <ul>
+                <li class="all-task">
+                    <p>所有任务&nbsp;<span class="allTaskNum"></span></p>
+                </li>
+                <li class="list">
+                    <p>分类列表</p>
+                    <dl >
+                        <dt class="cate_default category"><img src="img/folder.ico"/><span class="num">默认分类</span></dt>
+                    </dl>
+                </li>
+            </ul>
+            <div class="add">
+                <img src="img/folder_add.ico">
+            </div>
+        </div>
+
+        <div id="subnav" class="sidebar">
+            <ul>
+                <li>所&nbsp;有</li>
+                <li>未完成</li>
+                <li>已完成</li>
+            </ul>
+
+            <dl></dl>
+            <div class="add">
+                <img src="img/file_add.ico"/>
+            </div>
+        </div>
+
+        <div id="main">
+            <div class="title-row row">
+                <span id="title">任务标题：</span>
+                <div class="operate" >
+                    <img src="img/complete.ico">
+                    <img src="img/edit.ico">
+                </div>
+            </div>
+
+            <div class="date-row row">
+                <span id="date" class="">任务日期：</span>
+            </div>
+            <div class="things">
+            </div>
+        </div>
+
+        <div class="pop">
+            <div class="title">
+                <span>新增分类</span>
+                <im src="img/cancel.ico">
+            </div>
+
+            <div class="input">
+                <p>新分类名称:<input type="text" placeholder="在此输入新分类的名称" class="name" style="width: 200px; height: 30px; margin-left: 24px"></input></p>
+                <p>
+                    新分类父节点:
+                    <select name="parentNode" class="categorySelect" style="width: 200px; height: 30px;" >
+                        <option value="0">默认分类</option>
+                        <option value="1">无</option>
+                    </select>
+                </p>
+                <div class="mybutton">
+                   <button class="btn1">确认</button>
+                    <button class="btn2">取消</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
