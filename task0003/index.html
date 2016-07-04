@@ -16,6 +16,7 @@
             <ul>
                 <li class="all-task">
                     <p>所有任务&nbsp;<span class="allTaskNum"></span></p>
+                    <i class="delete"><img src="img/delete.ico"></i>
                 </li>
                 <li class="list">
                     <p>分类列表</p>
@@ -61,14 +62,14 @@
         <div class="pop">
             <div class="title">
                 <span>新增分类</span>
-                <im src="img/cancel.ico">
+                <img src="img/cancel.ico">
             </div>
 
             <div class="input">
-                <p>新分类名称:<input type="text" placeholder="在此输入新分类的名称" class="name" style="width: 200px; height: 30px; margin-left: 24px"></input></p>
+                <p>新分类名称:<input type="text" placeholder="在此输入新分类的名称" class="name rectangle" style=" margin-left: 24px" /></p>
                 <p>
                     新分类父节点:
-                    <select name="parentNode" class="categorySelect" style="width: 200px; height: 30px;" >
+                    <select name="parentNode" class="categorySelect rectangle" >
                         <option value="0">默认分类</option>
                         <option value="1">无</option>
                     </select>
@@ -77,10 +78,9 @@
                    <button class="btn1">确认</button>
                     <button class="btn2">取消</button>
                 </div>
-
             </div>
-
         </div>
+        <div class="overLayer"></div>
     </div>
 </body>
 </html>

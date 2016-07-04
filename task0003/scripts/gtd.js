@@ -36,10 +36,17 @@ window.onload = function() {
             });
         }
     }
-    fucntion addCategory() {
-
+    // 遮蔽罩
+    function overLayer(display){
+        var e = document.getElementsByClassName('overLayer')[0];
+        var _scrollWidth = Math.max(document.body.scrollWidth, document.documentElement.scrollWidth);
+        var _scrollHeight = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
+        e.style.width = _scrollWidth + 'px';
+        e.style.height = _scrollHeight + 'px';
+        e.style.display = display;
     }
-    refreshTaskNum();
-    categoryGetTaskNum(document.getElementsByClassName('cate_default')[0]);
+    overLayer('block');
+    // refreshTaskNum();
+    // categoryGetTaskNum(document.getElementsByClassName('cate_default')[0]);
 }
 

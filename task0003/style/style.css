@@ -11,7 +11,7 @@ sup { vertical-align:text-top; }
 sub{ vertical-align:text-bottom; }
 legend { color:#000; }
 fieldset, img { border:0; }
-button, input, select, textarea { font-size:100%; }
+button, input, select, textarea { font-size:100%;  }
 table { border-collapse:collapse; border-spacing:0; }
 button {
         outline: none;
@@ -73,6 +73,17 @@ html,body{
     margin-bottom: 20px;
 }
 
+.delete{
+    float: right;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+
+.delete:hover {
+    cursor: pointer;
+}
+
 .container .sidebar .add {
     height: 40px;
     width: 100%;
@@ -94,8 +105,14 @@ html,body{
 }
 #mainnav .list dl dt {
     margin-left: 10px;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 10px;
 }
 
+#mainnav .list dl dt:hover{
+    background: red;
+}
 #mainnav .list dl dt>img{
     width: 16px;
     height: 16px;
@@ -170,10 +187,11 @@ html,body{
     height: 200px;
     border-radius: 10px;
     z-index: 10;
-    background: gray;
+    background: white;
     position: absolute;
     left: 480px;
-    top: 220px;
+    top: 150px;
+    display: none;
 }
 
 
@@ -214,6 +232,12 @@ html,body{
     margin: 10px;
 }
 
+.pop .rectangle{
+    border: 1px solid #E0D9D9;
+    width: 200px;
+    height: 30px;
+}
+
 
 .pop button {
     margin-top: 35px ;
@@ -235,4 +259,16 @@ html,body{
 }
 .pop .btn2 {
     margin-left: 50px;
+}
+
+/*遮蔽层*/
+.overLayer{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #D8D4D4;
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+    z-index: 2;
+    display: none;
 }
