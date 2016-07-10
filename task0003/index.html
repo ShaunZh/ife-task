@@ -1,38 +1,60 @@
 <!DOCTYPE html>
-<html lang="zh-cmn">
+<html >
 <head>
     <meta charset="utf-8">
     <title>Task0003: GTO Tools</title>
     <link rel="stylesheet" type="text/css" href="style/style.css">
-    <script type="text/javascript" defer="defer" src="scripts/util.js"></script>
-    <script type="text/javascript" defer="defer" src="scripts/gtd.js"></script>
+
 </head>
 <body>
     <header class="header">
         <h1>GTD Tools</h1>
     </header>
-<div class="container">
+    <div class="container">
         <div id="mainnav" class="sidebar">
             <ul>
                 <li class="all-task">
-                    <p>所有任务&nbsp;<span class="allTaskNum"></span></p>
-                    <i class="delete"><img src="img/delete.ico"></i>
+                    <h1>所有任务</h1>
+                    <span class="allTaskNum"></span>
                 </li>
-                <li class="list">
-                    <p>分类列表</p>
-                    <dl >
-                        <dt class="cate_default category"><img src="img/folder.ico"/><span class="num">默认分类</span></dt>
-                    </dl>
+                <li>
+                    <h2>分类列表</h2>
+                    <ul class="itemWrap">
+                        <li class="category">
+                            <h3>
+                                <img class="ico-folder" src="img/folder.ico"/><span>默认分类</span>
+                                <i class="delete" >
+                                        <img src="img/delete.ico">
+                                </i>
+                            </h3>
+                            <ul class="taskWrap">
+                                <li>
+                                    <img class="ico-file" src="img/file.ico" /><span>默认</span>
+                                    <i class="delete" >
+                                        <img src="img/delete.ico">
+                                    </i>
+                                    <!-- <ul class="">
+                                        <li>
+                                            <h4>time</h4>
+                                            <ul>
+                                                <li>title</li>
+                                                <li>title</li>
+                                            </ul>
+                                        </li>
+                                    </ul> -->
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </li>
             </ul>
             <div class="add">
-                <img src="img/folder_add.ico">
+                    <img src="img/folder_add.ico" class="addFolder">
             </div>
         </div>
-
         <div id="subnav" class="sidebar">
             <ul>
-                <li>所&nbsp;有</li>
+                <li>所 有</li>
                 <li>未完成</li>
                 <li>已完成</li>
             </ul>
@@ -42,7 +64,6 @@
                 <img src="img/file_add.ico"/>
             </div>
         </div>
-
         <div id="main">
             <div class="title-row row">
                 <span id="title">任务标题：</span>
@@ -58,29 +79,31 @@
             <div class="things">
             </div>
         </div>
-
         <div class="pop">
             <div class="title">
                 <span>新增分类</span>
-                <img src="img/cancel.ico">
+                <img class="cancel" src="img/cancel.ico" >
             </div>
 
             <div class="input">
-                <p>新分类名称:<input type="text" placeholder="在此输入新分类的名称" class="name rectangle" style=" margin-left: 24px" /></p>
+                <p>新分类名称:<input type="text" placeholder="在此输入新分类的名称" class="newFolder rectangle" style=" margin-left: 24px" /></p>
                 <p>
                     新分类父节点:
                     <select name="parentNode" class="categorySelect rectangle" >
-                        <option value="0">默认分类</option>
-                        <option value="1">无</option>
+                        <option value="0">无</option>
+                        <option value="1">默认分类</option>
                     </select>
                 </p>
+                <span class="errorHint"></span>
                 <div class="mybutton">
-                   <button class="btn1">确认</button>
-                    <button class="btn2">取消</button>
+                    <button class="btn1">确认</button>
+                    <button class="btn2 cancel">取消</button>
                 </div>
             </div>
         </div>
         <div class="overLayer"></div>
     </div>
+    <script type="text/javascript" defer="defer" src="scripts/util.js"></script>
+    <script type="text/javascript" defer="defer" src="scripts/gtd.js"></script>
 </body>
 </html>

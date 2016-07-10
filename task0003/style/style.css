@@ -16,7 +16,6 @@ table { border-collapse:collapse; border-spacing:0; }
 button {
         outline: none;
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -41,7 +40,6 @@ html,body{
     margin-left: 16px;
     line-height: 60px;
 }
-
 /* container */
 .container {
     width: 100%;
@@ -63,26 +61,58 @@ html,body{
     background: #F2F2F2;
 /*  position: relative; */
 }
-#mainnav ul{
+#mainnav>ul{
     padding: 25px 0 0 10px;
 }
-#mainnav li {
-    margin-bottom: 20px;
-}
-#mainnav .list > p {
-    margin-bottom: 20px;
+#mainnav .all-task {
+    margin-bottom: 10px;
 }
 
+#mainnav .all-task>h1 {
+    display: inline-block;
+}
+
+#mainnav .list>p{
+    margin-bottom: 10px;
+}
+
+#mainnav .itemWrap {
+    margin:15px 0 0 20px;
+}
+
+#mainnav .ico-folder {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+#mainnav .ico-file {
+    width: 12px;
+    height: 14px;
+    margin-right: 5px;
+}
+
+#mainnav .taskWrap{
+    margin: 5px 0 0 15px;
+    font-size: 14px;
+}
+#mainnav .taskWrap li:hover{
+    background: red;
+    cursor: pointer;
+}
 .delete{
     float: right;
     display: inline-block;
     width: 16px;
     height: 16px;
+    padding-right: 3px;
+    display: none;
+/*    z-index: 5;*/
 }
 
-.delete:hover {
+/*.delete:hover {
     cursor: pointer;
-}
+}*/
 
 .container .sidebar .add {
     height: 40px;
@@ -102,23 +132,6 @@ html,body{
 }
 .container .sidebar .add img:hover{
     cursor: pointer;
-}
-#mainnav .list dl dt {
-    margin-left: 10px;
-    height: 24px;
-    line-height: 24px;
-    padding-left: 10px;
-}
-
-#mainnav .list dl dt:hover{
-    background: red;
-}
-#mainnav .list dl dt>img{
-    width: 16px;
-    height: 16px;
-}
-#mainnav .list dl dt>span{
-    margin-left: 16px;
 }
 
 #subnav {
@@ -168,7 +181,6 @@ html,body{
     cursor: pointer;
 }
 
-#mainnav .list
 /*光标浮停在子分类上时，背景设置为白色*/
 .categoryfloating {
     background: white;
@@ -177,10 +189,11 @@ html,body{
 .taskfloating {
     background:#DFDDDD;
 }
-
-.category:hover{
+.category>h3:hover{
     cursor: pointer;
+    background: red;
 }
+
 
 .pop {
     width: 400px;
@@ -193,9 +206,6 @@ html,body{
     top: 150px;
     display: none;
 }
-
-
-
 .pop .title {
     height: 30px;
     width:  100%;
@@ -227,6 +237,7 @@ html,body{
 }
 .pop .input {
     margin: 10px;
+    position: relative;
 }
 .pop .input p {
     margin: 10px;
@@ -246,8 +257,6 @@ html,body{
     background: #35E443;
     border-radius: 8px;
     color: white;
-    position: relative;
-
 }
 .pop button:hover {
     background: #05C210;
@@ -260,6 +269,16 @@ html,body{
 .pop .btn2 {
     margin-left: 50px;
 }
+
+.pop .errorHint{
+    position: absolute;
+    top: 75px;
+    left: 10px;
+    color: red;
+    font-size: 12px;
+    display:none;
+}
+
 
 /*遮蔽层*/
 .overLayer{
