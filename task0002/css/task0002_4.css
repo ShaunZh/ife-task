@@ -1,0 +1,46 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+body, button, input, select, textarea { font:12px tahoma, arial }
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+address, cite, dfn, em, var { font-style:normal; }
+code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
+small{ font-size:12px; }
+/* ul, ol { list-style:none; } */
+a { text-decoration:none; }
+a:hover { text-decoration:underline; }
+sup { vertical-align:text-top; }
+sub{ vertical-align:text-bottom; }
+legend { color:#000; }
+fieldset, img { border:0; }
+button, input, select, textarea { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; }
+ul li {list-style: none; outline: none};
+body {
+    background: #E8E1E1;
+}
+
+#search {
+    width: 980px;
+    margin: 30px auto;
+}
+
+#inputText {
+    width: 540px;
+    height: 35px;
+    border: 1px solid #D6CFCF;
+}
+
+#inputText:hover {
+    border: 1px solid #BAB5B5;
+}
+#inputText:focus {
+    border: 1px solid #356AD0;
+}
+ /* 选中选择的列表项 */
+#search .select {
+    background: #D4C7C7;
+}
+
+#matchListWrap {
+    width: 540px;
+    border: 1px solid #A9A6A6;
+}

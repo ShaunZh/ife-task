@@ -1,0 +1,181 @@
+@charset "utf-8";
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font: 12px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+address,
+cite,
+dfn,
+em,
+var {
+  font-style: normal;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: couriernew, courier, monospace;
+}
+small {
+  font-size: 12px;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+legend {
+  color: #000;
+}
+fieldset,
+img {
+  border: 0;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+button {
+  outline: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: "SimHei";
+}
+.header {
+  height: 60px;
+  margin: 0 60px;
+  background: pink;
+  line-height: 60px;
+}
+.header .title {
+  float: left;
+  height: 60px;
+}
+.header .title span {
+  font-size: 20px;
+  margin-left: 5px;
+  padding-bottom: 20px;
+}
+.header nav {
+  float: right;
+}
+.header nav a {
+  margin-left: 50px;
+  width: 64px;
+}
+.banner .banner-img {
+  background-image: url(../img/banner_img.jpg);
+  background-size: 100%;
+  min-width: 1279px;
+  height: 680px;
+}
+.content1 {
+  width: 100%;
+  height: 360px;
+  background: #EDEDED;
+}
+.content1 img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 85px;
+}
+.content1 p {
+  font-size: 50px;
+  color: #8F8D8E;
+  text-align: center;
+  margin-top: 60px;
+}
+.find-party {
+  background-image: url(../img/search_bac.jpg);
+  background-size: 100%;
+  height: 341px;
+  min-width: 1279px;
+  color: white;
+  text-align: center;
+}
+.find-party .intro {
+  padding: 60px 0;
+}
+.find-party .intro h3 {
+  font-size: 22px;
+  font-weight: normal;
+}
+.find-party .intro .small {
+  font-size: 11px;
+}
+.find-party .intro p {
+  padding-top: 10px;
+}
+.find-party .search select {
+  height: 36px;
+  width: 236px;
+  font-size: 12px;
+  color: #C6BDBD;
+  margin-right: 35px;
+  background: url(../img/btnb.png) no-repeat;
+}
+.find-party .search .btn {
+  height: 36px;
+  width: 236px;
+  background-color: #BE4E48;
+  color: white;
+}

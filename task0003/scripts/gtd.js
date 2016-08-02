@@ -129,64 +129,59 @@ window.onload = function() {
                 overLayer('none');
                 document.getElementsByClassName('pop')[0].style.display = 'none';
                 refreshTaskNum();
-                   dispDeleteIco();
+                dispDeleteIco();
+                deleteOperate();
             }
         });
     }
     // 当鼠标滑过任务名时，显示删除图案
     function dispDeleteIco() {
+        // 为任务添加删除图标
         var e = document.getElementsByClassName("taskWrap");
-        console.log("taskWrap" + e);
         for (var i = 0; i < e.length; i++) {
             var lis = e[i].getElementsByTagName('li');
-
             for (var j = 0; j < lis.length; j++) {
-                EventUtil.addHandler(lis[j], 'mouseover', function(event){
-                    console.log(lis[j]);
-                     if (lis[j].getElementsByClassName('delete').length != 0) {
-                         lis[j].getElementsByClassName('delete')[0].style.display = 'block';
-                        console.log("显示");
+                EventUtil.addHandler(lis[j], 'mouseenter', function(event){
+                     if (this.getElementsByClassName('delete').length != 0) {
+                         this.getElementsByClassName('delete')[0].style.display = 'block';
                      }
 
                 });
-                EventUtil.addHandler(lis[j], 'mouseout', function(event) {
-                    if (lis[j].getElementsByClassName('delete').length != 0) {
-                        lis[j].getElementsByClassName('delete')[0].style.display = 'none';
-                        console.log("消失");
+                EventUtil.addHandler(lis[j], 'mouseleave', function(event) {
+                    if (this.getElementsByClassName('delete').length != 0) {
+                        this.getElementsByClassName('delete')[0].style.display = 'none';
                     }
                 });
             }
+        }
+        // 为分类添加删除图标
+        var category = document.getElementsByClassName("category");
+        for (var i = 0; i < category.length; i++) {
+            var h3 = category[i].getElementsByTagName('h3')[0];
+            EventUtil.addHandler(h3, 'mouseenter', function(event) {
+                if (this.getElementsByClassName('delete').length != 0) {
+                    this.getElementsByClassName('delete')[0].style.display = 'block';
+                }
+            });
+            EventUtil.addHandler(h3, 'mouseleave', function(event) {
+                if (this.getElementsByClassName('delete').length != 0) {
+                    this.getElementsByClassName('delete')[0].style.display = 'none';
+                }
+            });
 
-            //     var event = EventUtil.getEvent(event);
-            //     console.log(event.target.nodeName);
-            //     if ((event.target.nodeName.toLowerCase() === 'li') || (event.target.parentNode.nodeName.toLowerCase() === 'li') ) {
-            //         if (event.target.getElementsByClassName('delete').length != 0) {
-            //             event.target.getElementsByClassName('delete')[0].style.display = 'block';
-            //             console.log("显示");
-            //         }
-            //     }
-            // });
-            // EventUtil.addHandler(e[i], 'mouseout', function(event) {
-            //     var event = EventUtil.getEvent(event);
-            //     if ((event.target.nodeName.toLowerCase() === 'li') || (event.target.parentNode.nodeName.toLowerCase() === 'li') ) {
-            //         if (event.target.getElementsByClassName('delete').length != 0) {
-            //             event.target.getElementsByClassName('delete')[0].style.display = 'none';
-            //             console.log("消失");
-            //         }
-            //     }
-            // });
         }
     }
     function deleteOperate(){
-        var folder = document.getElementsByClassName('folder')[0];
-        EventUtil.addHandler(folder, 'click', function(e) {
-            var event = EventUtil.getEvent(e);
-            console.log("delete");
-            console.log(event.target.className);
-            if (event.target.className === 'delete') {
-                prompt("你叫什么名字", "请叫我张大侠");
+        var deletes = document.getElementsByClassName('delete');
+        for (var i = 0; i < deletes.length; i++) {
+            EventUtil.addHandler(deletes[i], 'click', function(e) {
+            var flag = confirm("删除文件后不能恢复，请确认是否删除","");
+            if (flag === true) {
+                removeElement(this.parentNode);
             }
-        })
+          });
+        }
+
     }
 
    // deleteOperate();

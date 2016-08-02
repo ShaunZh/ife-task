@@ -133,3 +133,12 @@ function getNext(ele) {
     }
     return next;
 }
+
+
+function removeElement(_element){
+    while()
+         var _parentElement = _element.parentNode;
+         if(_parentElement){
+                _parentElement.removeChild(_element);
+         }
+}

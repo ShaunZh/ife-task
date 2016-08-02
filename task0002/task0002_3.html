@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/task0002_3.css">
+    <script type="text/javascript" src="js/task0002_3.js" defer="defer"></script>
+    <title>task0002_3</title>
+</head>
+<body>
+    <div id="task3">
+        <span class="tip">任务3：轮播图</span>
+        <div id="contains">
+            <div id="img-wrap">
+                <img src="img/slide-1.png" alt="1">
+                <img src="img/slide-2.png" alt="2">
+                <img src="img/slide-3.png" alt="3">
+                <img src="img/slide-4.png" alt="4">
+                <img src="img/slide-5.png" alt="5">
+                <img src="img/slide-6.png" alt="6">
+            </div>
+            <div id="fp-nav">
+                <ul>
+                    <li class="light" data-index ="0"><a href="#"></a></li>
+                    <li data-index  ="1"><a href="#"></a></li>
+                    <li data-index  ="2"><a href="#"></a></li>
+                    <li data-index  ="3"><a href="#"></a></li>
+                    <li data-index  ="4"><a href="#"></a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div id="setting">
+            <div class="order">
+                <input type="radio" name="order" value="positive">正序</input>
+                <input type="radio" name="order" value="opposite">反序</input>
+            </div>
+                        <div class="circle">
+                <input type="radio" name="circle" value="yes">循环</input>
+                <input type="radio" name="circle" value="No">单次</input>
+            </div>
+            <div class="time">
+                <input type="text" name="time" placeholder="请输入时间间隔" id="time">s</input>
+            </div>
+
+            <div class="execute">
+                <input type="button" name="btn" id="start" value="开始"></input>
+                <input type="button" name="btn" id="stop" value="停止"></input>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
