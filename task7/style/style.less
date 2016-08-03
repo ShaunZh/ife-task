@@ -84,6 +84,7 @@ button {
 
     height: 341px;
     min-width: 1279px;
+
     color: white;
     text-align: center;
     .intro{
@@ -97,28 +98,55 @@ button {
             font-size: 11px;
         }
         p  {
-            padding-top: 10px;
+            padding-top: 10px
+            ;
         }
     }
 
     .search {
-        select {
-             height: 36px;
-             width: 236px;
-             font-size: 12px;
-             color: #C6BDBD;
-             margin-right: 35px;
-            background: url(../img/btnb.png)  no-repeat ;
+        .wrap {
+            background:url(../img/btnb.png) no-repeat center right;
+            width: 236px;
+            height: 36px;
+            display: inline-block;
+            margin-right: 35px;
+            border: 1px solid #CFCCCC;
+
         }
+
+        select {
+             height: 100%  ;
+             width: 216px;
+             font-size: 12px;
+             color: black;
+
+            appearance:none;
+            -moz-appearance:none;
+            -webkit-appearance:none;
+            /*padding-left: 10px;*/
+
+             background: white;
+            /*background: url(../img/btnb.png)  no-repeat ;*/
+        }
+
+
+
+/*
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            display: inline-block;
+            right: 35px;
+            top: 50%;
+            background-size: cover;*/
+
         .btn  {
             height: 36px;
             width: 236px;
             background-color: #BE4E48;
             color: white;
         }
-
     }
-
 }
 
 
