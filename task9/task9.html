@@ -7,63 +7,83 @@
 </head>
 <body>
     <div id="header">
-        <span class="logo"><img src="img/logo.png" width="36px" height="36px"></span>
+        <span class="logo"><img src="img/logo.png"></span>
         <span class="search"><input type="search" /></span>
-        <span class="login"><img src="img/login.png" />登录</span>
+        <span class="login"><img src="img/login.png" /><b>登录</b></span>
     </div>
     <div id="container">
         <div class="sider">
             <div class="wrap">
                 <div class="user-info">
-                    <span><img src="img/user_photo.png"> ABC123</span>
+                    <img src="img/user_photo.png">
+                    <span class="name">ShaunZh</span>
                      <ul>
-                        <li class="star">收藏</li>
-                        <li class="fans">粉丝</li>
+                        <li class="star">
+                            <p>110</p>
+                            <p>收藏</p>
+                        </li>
+                        <li class="fans">
+                            <p>313</p>
+                            <p>粉丝</p>
+                        </li>
                     </ul>
                 </div>
                 <div class="catalog">
                     <li class="report list" >
-                         <img src="img/1.png">
-                         <span>个人报表</span>
-                        <ul>
-                            <li>
-                                <img src="img/arrow.png">
-                                <span><img src="img/folder.png"> 文件一</span>
-                            </li>
-                            <li>
-                                <img src="img/arrow_unfold.png">
-                                <span><img src="img/folder.png">文件二</span>
-                                <ul>
-                                    <li><img src="img/document_selected.png"> 文档1</li>
-                                    <li><img src="img/document.png">文档1</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <img src="img/arrow.png">
-                                <span><img src="img/folder.png"> 文件三</span>
-                            </li>
-                        </ul>
+                        <div class="list-wrap">
+                            <img src="img/1.png" class="icon">
+                            <span class="name select">个人报表</span>
+                            <ul class="stage-1 stage">
+                                <li>
+                                    <img src="img/arrow.png">
+                                    <span><img src="img/folder.png">文件一</span>
+                                </li>
+                                <li>
+                                    <img src="img/arrow_unfold.png" class="unfold">
+                                    <span class="select"><img src="img/folder.png">文件二</span>
+                                    <ul class="stage-2 stage" >
+                                        <li class="select"><img src="img/document_selected.png"> 文档1</li>
+                                        <li><img src="img/document.png">文档1</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img src="img/arrow.png">
+                                    <span><img src="img/folder.png"> 文件三</span>
+                                </li>
+                            </ul>
+                        </div>
+                         
                     </li>
                     <li class="star list">
-                        <img src="img/2.png">
-                        <span>个人收藏</span>
+                        <div class="list-wrap">
+                            <img class="icon" src="img/2.png">
+                            <span>个人收藏</span>
+                        </div>
 
                     </li>
                     <li class="share list">
-                        <img src="img/3.png">
-                        <span>我的分享</span>
+                        <div class="list-wrap">
+                            <img class="icon" src="img/3.png">
+                            <span>我的分享</span>
+                        </div>
                     </li>
                     <li class="photo list">
-                        <img src="img/4.png">
-                        <span>图库</span>
+                        <div class="list-wrap">
+                            <img class="icon" src="img/4.png">
+                            <span>图库</span>
+                        </div>
                     </li>
                     <li class="record list">
-                        <img src="img/5.png">
-                        <span>成长记录</span>
+                        <div class="list-wrap">
+                            <img class="icon" src="img/5.png">
+                            <span>成长记录</span>
+                        </div>
                     </li>
                     <li class="account list">
-                        <img src="img/6.png">
-                        <span>账户信息</span>
+                        <div class="list-wrap">
+                            <img class="icon" src="img/6.png">
+                            <span>账户信息</span>
+                        </div>
                     </li>
                 </div>
             </div>
