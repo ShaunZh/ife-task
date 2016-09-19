@@ -183,17 +183,17 @@ html {
   font-size: 12px;
   color: #65778B;
 }
-#container .sider .wrap .catalog .list {
+#container .sider .wrap .catalog .list-wrap {
   padding: 15px 0 35px 40px;
 }
-#container .sider .wrap .catalog .list .icon {
+#container .sider .wrap .catalog .list-wrap .icon {
   padding-right: 10px;
 }
 #container .sider .wrap .catalog .select {
   color: white;
 }
-#container .sider .report-wrap {
-  background: red;
+#container .sider .wrap .catalog .report {
+  background: #383e4e;
 }
 #container .sider .wrap .stage {
   padding: 10px 0 0 25px;
@@ -205,5 +205,110 @@ html {
   padding-right: 5px;
 }
 #container .content {
-  float: left;
+  margin-left: 260px;
+  background: #EEE;
+  font-size: 12px;
+  color: #D1D1D1;
+}
+#container .content .nav {
+  height: 30px;
+  background: white;
+  font-size: 12px;
+  color: #D1D1D1;
+  line-height: 30px;
+  padding-left: 20px;
+}
+#container .content .nav .cur {
+  color: #CADCD5;
+}
+#container .content .main {
+  width: 890px;
+  margin: 20px auto;
+}
+#container .content .main .search {
+  height: 85px;
+  background: white;
+  position: relative;
+}
+#container .content .main .search .wrap {
+  /* padding: 20px 0 0 30px; */
+}
+#container .content .main .search .wrap form,
+#container .content .main .search .wrap input {
+  display: inline-block;
+  height: 25px;
+  border: 1px solid #D1D1D1;
+  line-height: 25px;
+}
+#container .content .main .search .wrap .column {
+  padding-left: 30px;
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+}
+#container .content .main .search .wrap .column-1 {
+  left: 30px;
+  width: 125px;
+  height: 55px;
+}
+#container .content .main .search .wrap .column-1 form {
+  width: 70px;
+}
+#container .content .main .search .wrap .column-2 {
+  left: 190px;
+  width: 190px;
+  height: 55px;
+}
+#container .content .main .search .wrap .column-2 div {
+  display: inline-block;
+}
+#container .content .main .search .wrap .column-2 div form {
+  width: 120px;
+}
+#container .content .main .search .wrap .column-2 .row-2 {
+  position: relative;
+  top: -15px;
+}
+#container .content .main .search .wrap .column-2 img {
+  position: relative;
+  top: -15px;
+}
+#container .content .main .search .wrap .column-3 {
+  left: 410px;
+  width: 295px;
+  height: 55px;
+}
+#container .content .main .search .wrap .column-3 div {
+  display: inline-block;
+}
+#container .content .main .search .wrap .column-3 .row-2 {
+  position: relative;
+  top: 5px;
+}
+#container .content .main .search .wrap .column-3 .row-1-1 input {
+  width: 125px;
+}
+#container .content .main .search .wrap .column-3 .row-1-2 form {
+  width: 70px;
+}
+#container .content .main .search .wrap .column-3 .row-2-1 form {
+  width: 70px;
+}
+#container .content .main .search .wrap .column-3 .row-2-2 {
+  padding-left: 10px;
+}
+#container .content .main .search .wrap .column-3 .row-2-2 form {
+  width: 125px;
+}
+#container .content .main .search .wrap button {
+  position: absolute;
+  top: 30px;
+  right: 85px;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  background: #3A8BC0;
+  color: white;
+  font-size: 14px;
+  border-radius: 2px;
 }

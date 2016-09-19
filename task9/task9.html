@@ -89,83 +89,90 @@
             </div>
         </div>
         <div class="content">
-            <nav>
+            <nav class="nav">
                 <a href="#">C站 /</a>
                 <a href="#">个人报表 /</a>
                 <a href="#">文件一 /</a>
-                <a href="#">文档一 </a>
+                <a href="#" class="cur">文档一 </a>
             </nav>
             <div class="main">
-                 <div class="search">
-                   <div class="column-1">
-                        <span>查询项</span>
-                        <form>
-                            <select name="item">
-                                <option value="item-1">第一项</option>
-                                <option value="item-2">第二项</option>
-                                <option value="item-3">第三项</option>
-                            </select>
-                        </form>
-                    </div>
-                    <div class="column-2">
-                       <div class="row-1">
-                           <span>买方</span>
-                           <form>
-                               <select name="name">
-                                   <option value="A">小A</option>
-                                   <option value="B">小B</option>
-                                   <option value="C">小C</option>
-                               </select>
-                           </form>
-                       </div>
-                       <div class="row-2">
-                           <span>卖方</span>
-                           <form>
-                               <select name="name">
-                                   <option value="A">小A</option>
-                                   <option value="B">小B</option>
-                                   <option value="C">小C</option>
-                               </select>
-                           </form>
-                       </div>
-                       <img src="img/change.png">
-                   </div>
-                  <div class="column-3">
-                       <div class="row-1">
-                            <div class="row-1-1">
-                                <span>日期</span>
-                                <input type="date" />
-                            </div>
-                            <<div class="row-1-2">
-                                <span>总耗时</span>
-                                <form>
-                                    <select name="day">
-                                        <option value="1">1天</option>
-                                        <option value="8">8天</option>
-                                    </select>
-                                </form>
-                            </div>
-                       </div>
-                       <div class="row-2">
-                           <div class="row-2-1">
-                               <span>人数</span>
+                <div class="search">
+                    <div class="wrap">
+                        <div class="column column-1">
+                            <span>查询项</span>
+                            <form  autocomplete="off">
+                                <select name="item">
+                                    <option value="item-1">第一项</option>
+                                    <option value="item-2">第二项</option>
+                                    <option value="item-3">第三项</option>
+                                </select>
+                            </form>
+                        </div>
+
+                        <div class="column column-2">
+                           <div class="row-1">
+                               <span>买方</span>
                                <form>
-                                   <select name="person">
-                                       <option value="1">1人</option>
-                                       <option value="10">10人</option>
+                                   <select name="name">
+                                       <option value="A">小A</option>
+                                       <option value="B">小B</option>
+                                       <option value="C">小C</option>
                                    </select>
                                </form>
                            </div>
-                           <div class="row-2-2">
-                               <span>成交项</span>
-                               <select name="item">
-                                   <option value="1">1项</option>
-                                   <option value="10">10项</option>
-                               </select>
+                           <div class="row-2">
+                               <span>卖方</span>
+                               <form>
+                                   <select name="name">
+                                       <option value="A">小A</option>
+                                       <option value="B">小B</option>
+                                       <option value="C">小C</option>
+                                   </select>
+                               </form>
+                           </div>
+                           <img src="img/change.png">
+                       </div>
+                      <div class="column column-3">
+                           <div class="row-1">
+                                <div class="row-1-1">
+                                    <span>日期</span>
+                                    <input type="date" />
+                                </div>
+                                <<div class="row-1-2">
+                                    <span>总耗时</span>
+                                    <form>
+                                        <select name="day">
+                                            <option value="1">1天</option>
+                                            <option value="8">8天</option>
+                                        </select>
+                                    </form>
+                                </div>
+                           </div>
+                           <div class="row-2">
+                               <div class="row-2-1">
+                                   <span>人数</span>
+                                   <form>
+                                       <select name="person">
+                                           <option value="1">1人</option>
+                                           <option value="10">10人</option>
+                                       </select>
+                                   </form>
+                               </div>
+                               <div class="row-2-2">
+                                   <span>成交项</span>
+                                   <form>
+                                       <select name="item">
+                                           <option value="1">1项</option>
+                                           <option value="10">10项</option>
+                                       </select>
+                                   </form>
+                                   
+                               </div>
                            </div>
                        </div>
-                   </div>
-                  <button>搜索</button>
+                      <button>搜索</button>
+                    </div>
+                   
                 </div>
                 <div class="search-result">
                     <img class = left src="left-arrow.png" />

@@ -197,7 +197,7 @@ html {
         padding-top: 20px;
         font-size: 12px;
         color:  #65778B;
-        .list {
+        .list-wrap {
           padding: 15px 0 35px 40px;
           .icon {
             padding-right: 10px;
@@ -206,7 +206,7 @@ html {
         .select {
             color: white;
           }
-        .report-wrap{
+        .report{
             background: #383e4e;
           }
         }
@@ -223,5 +223,111 @@ html {
  }
 
  #container .content {
-  float: left;
+  margin-left: 260px;
+  background: #EEE;
+  font-size: 12px;
+  color:  #D1D1D1;
+  .nav {
+    height: 30px;
+    background: white;
+    font-size: 12px;
+    color:  #D1D1D1;
+    line-height: 30px;
+    padding-left: 20px;
+    .cur {
+      color: #CADCD5;
+    }
+  }
+  .main {
+    width: 890px;
+    margin: 20px auto;
+    .search {
+      height: 85px;
+      background: white;
+      position: relative;
+      .wrap{
+  
+        /* padding: 20px 0 0 30px; */
+        form, input{
+          display: inline-block;
+          height: 25px;
+          border: 1px solid #D1D1D1;
+          line-height: 25px;
+        }
+        .column {
+          padding-left: 30px;
+          display: inline-block;
+          position: absolute;
+          top: 15px;
+        }
+        .column-1 {
+          left: 30px;
+          width: 125px;
+          height: 55px;
+           form{
+            width: 70px;
+          } 
+        }
+        .column-2 {
+          left: 190px;
+          width: 190px;
+          height: 55px;
+          div {
+            display: inline-block;
+            form {
+              width: 120px;
+            }
+          }
+          .row-2 {
+            position: relative;
+            top: -15px;
+          }
+          img{
+            position: relative;
+            top: -15px;
+          }
+        }
+        .column-3 {
+          left: 410px;
+          width: 295px;
+          height: 55px;
+          div {
+            display: inline-block;
+          }
+          .row-2{
+            position: relative;
+            top: 5px;
+          }
+          .row-1-1 input{
+            width: 125px;
+          }
+          .row-1-2 form{
+            width: 70px;
+          }
+          .row-2-1 form{
+            width: 70px;
+          }
+          .row-2-2 {
+              padding-left: 10px;
+              form{
+              width: 125px;
+            }
+          }
+           
+        }
+        button{
+          position: absolute;
+          top: 30px;
+          right: 85px;
+          display: inline-block;
+          width: 50px;
+          height: 25px;
+          background: #3A8BC0;
+          color: white;
+          font-size: 14px;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
  }
